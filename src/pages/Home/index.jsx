@@ -28,8 +28,6 @@ function Home() {
     navigate(`${Path.companyAnalysis}?search=${searchKey}`);
   }, [searchKey, navigate]);
 
-  console.log('hi');
-
   return (
     <HomeContainer>
       <HomeFlexArea>
