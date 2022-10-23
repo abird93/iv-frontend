@@ -1,9 +1,10 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import styled from "styled-components";
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import styled from 'styled-components';
 
-import Home from "./pages/Home";
-import CompanyAnalysis from "./pages/CompanyAnalysis";
+import Home from './pages/Home';
+import CompanyAnalysis from './pages/CompanyAnalysis';
+import { Path } from './constants';
 
 const AppContainer = styled.div`
   display: flex;
@@ -17,8 +18,8 @@ function App() {
       {/* Header */}
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/company-analysis" element={<CompanyAnalysis />} />
+          <Route path={Path.home} element={<Home />} />
+          <Route path={Path.companyAnalysis} element={<CompanyAnalysis />} />
         </Routes>
       </BrowserRouter>
       {/* Footer */}
