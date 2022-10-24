@@ -3,7 +3,7 @@ import axios from 'axios';
 import { CompanyAnalysisContainer } from './styles';
 
 function CompanyAnalysis() {
-  return <CompanyAnalysisContainer>Company Analysis123</CompanyAnalysisContainer>;
+  return <CompanyAnalysisContainer>Company Analysis</CompanyAnalysisContainer>;
 }
 
 export default CompanyAnalysis;
