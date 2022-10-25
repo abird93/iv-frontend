@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import searchIcon from '../../static/icons/searchIcon.svg';
-
 export const HomeContainer = styled.div`
   display: flex;
   align-items: center;
