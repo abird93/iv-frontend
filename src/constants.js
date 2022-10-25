@@ -15,4 +15,6 @@ export const BreakPoint = {
 export const Path = {
   home: '/',
   companyAnalysis: '/company-analysis',
+  companyoverview: '/companyoverview',
+  financialAnalysisresult: '/fiancial',
 };

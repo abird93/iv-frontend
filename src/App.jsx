@@ -4,6 +4,8 @@ import styled from 'styled-components';
 
 import Home from './pages/Home';
 import CompanyAnalysis from './pages/CompanyAnalysis';
+import Companyoverview from './pages/CompanyOverview';
+import FiancialAnalysisResult from './pages/FinancialAnalysisResults';
 import { Path } from './constants';
 
 const AppContainer = styled.div`
@@ -20,6 +22,8 @@ function App() {
         <Routes>
           <Route path={Path.home} element={<Home />} />
           <Route path={Path.companyAnalysis} element={<CompanyAnalysis />} />
+          <Route path={Path.companyoverview} element={<Companyoverview />} />
+          <Route path={Path.financialAnalysisresult} element={<FiancialAnalysisResult />} />
         </Routes>
       </BrowserRouter>
       {/* Footer */}
