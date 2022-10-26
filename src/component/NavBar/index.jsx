@@ -8,7 +8,7 @@ const Sidebar = ({ children }) => {
   const toggle = () => setIsOpen(!isOpen);
   const menuItem = [
     {
-      path: '/company-analysis',
+      path: '/company-anlysis',
       name: '결과',
       icon: <FaTh />,
     },
