@@ -20,7 +20,7 @@ export const Title = styled.div`
   font-weight: 400;
   font-size: 7.5rem;
   line-height: 9rem;
-  color: #ef5350;
+  color: #7978e9;
 `;
 
 export const SearchInputArea = styled.div`

@@ -8,6 +8,11 @@ const Sidebar = ({ children }) => {
   const toggle = () => setIsOpen(!isOpen);
   const menuItem = [
     {
+      path: '/company-analysis',
+      name: '결과',
+      icon: <FaTh />,
+    },
+    {
       path: '/companyoverview',
       name: '기업개요',
       icon: <FaTh />,

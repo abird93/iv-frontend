@@ -6,7 +6,7 @@ export const HomeContainer = styled.div`
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background-color: #f5f6ff;
+  background-color: #fff9e7;
 `;
 
 export const Title = styled.div`

@@ -16,6 +16,12 @@ import {
 } from './styles';
 
 function Home() {
+  function Colorfulblue({ children }) {
+    return <span style={{ color: '#466EB6' }}>{children}</span>;
+  }
+  function Colorfulred({ children }) {
+    return <span style={{ color: '#EF5350' }}>{children}</span>;
+  }
   const navigate = useNavigate();
 
   const [searchKey, setSearchKey] = useState('');
@@ -31,7 +37,9 @@ function Home() {
   return (
     <HomeContainer>
       <HomeFlexArea>
-        <Title>IeeVee</Title>
+        <Title>
+          <Colorfulred>I</Colorfulred>ee<Colorfulblue>V</Colorfulblue>ee
+        </Title>
         <SearchInputArea>
           <InputArea>
             <Input placeholder='기업명을 입력해주세요.' onChange={onInputChange} />
