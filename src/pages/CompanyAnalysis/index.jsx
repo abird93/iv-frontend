@@ -28,9 +28,6 @@ function CompanyAnalysis() {
 
         <Text1>투자를 권고하고 싶지 않아요.</Text1>
       </Text1area>
-      <Img1area>
-        <img alt='arrow' src='img/next_arrow.png' />
-      </Img1area>
       <Text2area>
         <Img3area>
           <img className='catuion-mark' alt='pngegg' src='img/catuionicon.png' />

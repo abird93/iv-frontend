@@ -8,7 +8,7 @@ import {
   HomeFlexArea,
   Input,
   InputArea,
-  SearchButton,
+  SearchIcon,
   SearchInputArea,
   // SearchIcon,
   Subtitle,
@@ -34,6 +34,16 @@ function Home() {
     navigate(`${Path.companyAnalysis}?search=${searchKey}`);
   }, [searchKey, navigate]);
 
+  const handleOnClick = () => {
+    navigate('/company-analysis');
+  };
+  // 버튼에 적용할 클릭 이벤트 함수
+
+  const handleOnKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      handleOnClick(); // Enter 입력이 되면 클릭 이벤트 실행
+    }
+  };
   return (
     <HomeContainer>
       <HomeFlexArea>
@@ -42,10 +52,16 @@ function Home() {
         </Title>
         <SearchInputArea>
           <InputArea>
-            <Input placeholder='기업명을 입력해주세요.' onChange={onInputChange} />
-            {/* <SearchIcon /> */}
+            <Input
+              placeholder='기업명을 입력해주세요.'
+              onChange={onInputChange}
+              onKeyPress={handleOnKeyPress}
+            />
+            <SearchIcon>
+              <img className='searchicon' alt='search' src='/img/vector.svg' />
+            </SearchIcon>
           </InputArea>
-          <SearchButton onClick={onSearchButtonClick}>검색</SearchButton>
+          {/*<SearchButton onClick={onSearchButtonClick}>검색</SearchButton>*/}
         </SearchInputArea>
         <Subtitle>인공지능 기업분석 플랫폼</Subtitle>
       </HomeFlexArea>

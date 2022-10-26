@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const HomeContainer = styled.div`
+  font-family: 'SpoqaHanSansNeo-Regular';
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,14 +21,6 @@ export const Title = styled.div`
   font-size: 40px;
   line-height: 48px;
   color: #000;
-`;
-
-export const Img1area = styled.div`
-  position: absolute;
-  width: 77px;
-  height: 78px;
-  left: 1339px;
-  top: 75px;
 `;
 
 export const Img2area = styled.div`
@@ -53,6 +46,7 @@ export const Text1area = styled.div`
   top: 170px;
   background: #ffffff;
   border-radius: 20px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 export const Text1 = styled.div`
   position: absolute;
@@ -65,6 +59,7 @@ export const Text1 = styled.div`
   color: #f55060;
 `;
 export const Text2 = styled.div`
+  font-family: 'SpoqaHanSansNeo-Regular';
   position: absolute;
   width: 117px;
   height: 38px;
@@ -124,9 +119,10 @@ export const Text2area = styled.div`
   height: 405px;
   left: 850px;
   top: 170px;
-
+  font-family: 'SpoqaHanSansNeo-Regular';
   background: #ffffff;
   border-radius: 20px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 
 export const Text3area = styled.div`
@@ -137,10 +133,13 @@ export const Text3area = styled.div`
   top: 593px;
   background: #ffffff;
   border-radius: 20px;
+  font-family: 'SpoqaHanSansNeo-Regular';
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 
 export const Barchartarea = styled.div`
   position: absolute;
+  font-family: 'SpoqaHanSansNeo-Regular';
   width: 1156px;
   height: 297px;
   left: 0px;
