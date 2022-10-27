@@ -50,6 +50,7 @@ export const Input = styled.input`
   border: 1px solid #e4dfdf;
   border-radius: 3.125rem;
   padding-left: 50px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 
   &:focus {
     outline: none;

@@ -34,6 +34,7 @@ export const Input = styled.input`
   background-color: #f0f3f4;
   border-radius: 10px;
   padding-left: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   &:focus {
     outline: none;

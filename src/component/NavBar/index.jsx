@@ -28,7 +28,7 @@ const NavBar = () => {
   }
   return (
     <NavbarContainer1>
-      <Text1>Invsetment Vaccine</Text1>
+      <Text1>Investment Vaccine</Text1>
 
       <Input
         placeholder='기업명을 입력해주세요.'

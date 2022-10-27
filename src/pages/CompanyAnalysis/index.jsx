@@ -26,7 +26,7 @@ function CompanyAnalysis() {
           <img className='inveset-result' alt='pngwing' src='img/pngwing.svg' />
         </Img2area>
 
-        <Text1>투자를 권고하고 싶지 않아요.</Text1>
+        <Text1>투자를 권고하고 싶지 않아요</Text1>
       </Text1area>
       <Text2area>
         <Img3area>
@@ -37,7 +37,7 @@ function CompanyAnalysis() {
       </Text2area>
       <Text3area>
         <Text4>AI 분석 결과</Text4>
-        <Text5>일동홀딩스 부실확률.</Text5>
+        <Text5>일동홀딩스 생존확률</Text5>
         <Barchartarea>
           <BarChartcompany></BarChartcompany>
         </Barchartarea>

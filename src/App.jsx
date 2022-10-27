@@ -7,6 +7,7 @@ import Companyoverview from './pages/CompanyOverview';
 import FiancialAnalysisResult from './pages/FinancialAnalysisResults';
 import { Path } from './constants';
 import NavBar from './component/Navbar';
+import Sidebar from './component/Sidebar1';
 import { Navigate } from 'react-router-dom';
 
 const AppContainer = styled.div`
@@ -22,6 +23,7 @@ function App() {
 
       <BrowserRouter>
         <NavBar />
+        <Sidebar />
         <Routes>
           <Route path={Path.home} element={<Home />} />
           <Route path={Path.companyAnalysis} element={<CompanyAnalysis />} />
