@@ -18,7 +18,7 @@ const Sidebar = ({ children }) => {
       icon: <FaTh />,
     },
     {
-      path: '/fiancial',
+      path: '/FinancialAnalysisResults',
       name: '재무분석',
       icon: <FaUserAlt />,
     },

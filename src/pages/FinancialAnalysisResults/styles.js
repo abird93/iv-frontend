@@ -1,3 +1,3 @@
 import styled from 'styled-components';
 
-export const FiancialAnalysisResultcontainer = styled.div``;
+export const FinancialAnalysisResultscontainer = styled.div``;
