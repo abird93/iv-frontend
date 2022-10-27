@@ -104,7 +104,6 @@ function Companyoverview() {
       <div className='root'>
         <div className='section1'>
           <div className='section1_1'>
-            기업개요
             <p className='section1_1_1'>일동홀딩스</p>
             <p className='section1_1_2'>25,000 KRW</p>
             <p className='section1_1_3'>+650.00 (+2.67%)</p>
@@ -125,11 +124,13 @@ function Companyoverview() {
             </p>
           </div>
           <div className='section1_3'>
-            시가총액 2,816억원
-            <p className='section1_3_1'>시가총액순위 코스피 445위</p>
-            <p className='section1_3_2'></p>
-            <p className='section1_3_2'>상장주식수 11,540,400</p>
-            <p className='section1_3_2'>액면가 | 매매단위 1,000원 | 1주</p>
+            <p className='section1_3'>시가총액 2,816억원</p>
+            <p className='section1_3'>시가총액순위 코스피 445위</p>
+            <p className='section1_3'>상장주식수 11,540,400</p>
+            <p className='section1_3'>액면가 1000원 </p>
+            <p className='section1_3'>매매단위 1주</p>
+            <p className='section1_3'>외국인한도주식수 11,540,400주</p>
+            <p className='section1_3'>외국인보유주식수 171,766주</p>
           </div>
           {/* <div className='section1_3'>
             <PieChart width={300} height={300}>
@@ -164,9 +165,9 @@ function Companyoverview() {
           <div className='section3'>
             <div className='section3_1'>
               <p className='section3_1_1'>실시간 주가</p>
-              <p className='section3_1_2'>asldnlasndlkansdlknasldknaslkdnasdk</p>
+              <p className='section3_1_2'></p>
               <div className='section3_2'>
-                <div className='section3_2_1'>
+                {/* <div className='section3_2_1'>
                   <p className='section3_2_2'>Order value</p>
                   <p className='section3_2_3'>12.3K</p>
                 </div>
@@ -181,7 +182,7 @@ function Companyoverview() {
                 <div className='section3_2_1'>
                   <p className='section3_2_2'>Downloads</p>
                   <p className='section3_2_3'>34040</p>
-                </div>
+                </div> */}
               </div>
             </div>
             <ResponsiveContainer width={450} height={200}>
@@ -208,26 +209,26 @@ function Companyoverview() {
           <div className='section4'>
             <div className='sectoin4_1'>
               <div className='section4_1_1'>
-                <p className='section4_1_1_1'>유동비율</p>
-                <p className='section4_1_1_2'>4006</p>
-                <p className='section4_1_1_3'>10.00%(30 days)</p>
+                <p className='section4_1_1_1'>PER</p>
+                <p className='section4_1_1_2'>69.15</p>
+                <p className='section4_1_1_3'></p>
               </div>
               <div className='section4_1_2'>
-                <p className='section4_1_1_1'>재고자산회전률</p>
-                <p className='section4_1_1_2'>61344</p>
-                <p className='section4_1_1_3'>22.00%(30 days)</p>
+                <p className='section4_1_1_1'>PBR</p>
+                <p className='section4_1_1_2'>5.21배</p>
+                <p className='section4_1_1_3'></p>
               </div>
             </div>
             <div className='sectoin4_1'>
               <div className='section4_1_1'>
-                <p className='section4_1_1_1'>자기자본비율</p>
-                <p className='section4_1_1_2'>34040</p>
-                <p className='section4_1_1_3'>2.00%(30 days)</p>
+                <p className='section4_1_1_1'>ROA</p>
+                <p className='section4_1_1_2'>-6.92</p>
+                <p className='section4_1_1_3'></p>
               </div>
               <div className='section4_1_2'>
                 <p className='section4_1_1_1'>배당수익률</p>
-                <p className='section4_1_1_2'>47033</p>
-                <p className='section4_1_1_3'>0.22%(30 days)</p>
+                <p className='section4_1_1_2'>0.42%</p>
+                <p className='section4_1_1_3'></p>
               </div>
             </div>
           </div>

@@ -10,93 +10,128 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
+  Radar,
+  RadarChart,
+  PolarGrid,
+  PolarAngleAxis,
+  PolarRadiusAxis,
 } from 'recharts';
 import { PieChart, Pie, Sector, Cell } from 'recharts';
 
 const data = [
   {
-    name: '10',
-    uv: 4000,
-    pv: 2400,
+    name: '1',
+    benford: 30.1,
+    finstat: 20.51,
     amt: 2400,
   },
   {
-    name: '20',
-    uv: 3000,
-    pv: 1398,
+    name: '2',
+    benford: 17.6,
+    finstat: 7.69,
     amt: 2210,
   },
   {
-    name: '30',
-    uv: 2000,
-    pv: 9800,
+    name: '3',
+    benford: 12.49,
+    finstat: 10.25,
     amt: 2290,
   },
   {
-    name: '40',
-    uv: 2780,
-    pv: 3908,
+    name: '4',
+    benford: 9.69,
+    finstat: 15.38,
     amt: 2000,
   },
   {
-    name: '50',
-    uv: 1890,
-    pv: 4800,
+    name: '5',
+    benford: 7.91,
+    finstat: 10.25,
     amt: 2181,
   },
   {
-    name: '60',
-    uv: 2390,
-    pv: 3800,
+    name: '6',
+    benford: 6.69,
+    finstat: 0.0,
     amt: 2500,
   },
   {
-    name: '70',
-    uv: 3490,
-    pv: 4300,
+    name: '7',
+    benford: 5.79,
+    finstat: 7.69,
     amt: 2100,
   },
+  {
+    name: '8',
+    benford: 5.11,
+    finstat: 5.12,
+    amt: 2101,
+  },
+  {
+    name: '9',
+    benford: 4.57,
+    finstat: 23.07,
+    amt: 2103,
+  },
 ];
 
-const section1_2_data = [
-  {
-    id: 'illinois',
-    value: 713,
-    color: 'red',
-  },
-  {
-    id: 'Washington',
-    value: 583,
-    color: 'orange',
-  },
-  {
-    id: 'Mississippi',
-    value: 924,
-    color: 'yellow',
-  },
-  {
-    id: 'California',
-    value: 664,
-    color: 'green',
-  },
-  {
-    id: 'Maryland',
-    value: 560,
-    color: 'blue',
-  },
-  {
-    id: 'Alaska',
-    value: 793,
-    color: 'purple',
-  },
-];
+// const section1_2_data = [
+//   {
+//     id: 'illinois',
+//     value: 713,
+//     color: 'red',
+//   },
+//   {
+//     id: 'Washington',
+//     value: 583,
+//     color: 'orange',
+//   },
+//   {
+//     id: 'Mississippi',
+//     value: 924,
+//     color: 'yellow',
+//   },
+//   {
+//     id: 'California',
+//     value: 664,
+//     color: 'green',
+//   },
+//   {
+//     id: 'Maryland',
+//     value: 560,
+//     color: 'blue',
+//   },
+//   {
+//     id: 'Alaska',
+//     value: 793,
+//     color: 'purple',
+//   },
+// ];
 
 const data1_2 = [
-  { name: 'Group A', value: 400 },
-  { name: 'Group B', value: 300 },
-  { name: 'Group C', value: 300 },
+  {
+    name: 'Z-score',
+    A: 3,
+    B: 3,
+    C: 0,
+    fullMark: 150,
+  },
+  {
+    name: 'K2-score',
+    A: 0,
+    B: 1,
+    C: 1,
+    fullMark: 150,
+  },
+  {
+    name: 'KB-score',
+    A: 4,
+    B: 0,
+    C: 4,
+    fullMark: 150,
+  },
 ];
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+const COLORS = ['#0088FE', '#00C49F', '#FFBB28'];
 
 function FinancialAnalysisResults() {
   return (
@@ -106,10 +141,12 @@ function FinancialAnalysisResults() {
           <div className='section1_1'>
             <p className='section1_1_1'>재무 분석 결과</p>
             <p className='section1_1_2'>$34040</p>
-            <p className='section1_1_3'>North America</p>
-            <p className='section1_1_4'>asdlansldna sldnka lskdnla skndkasndlkans dlkasd</p>
+            <p className='section1_1_3'>
+              <img className='inveset-result' alt='pngwing' src='img/pngwing.svg' />
+            </p>
+            <p className='section1_1_4'></p>
           </div>
-          <div className='section1_2'>
+          {/* <div className='section1_2'>
             {section1_2_data.map((d, i) => {
               return (
                 <div key={i} className='bar_line'>
@@ -121,33 +158,22 @@ function FinancialAnalysisResults() {
                 </div>
               );
             })}
-          </div>
+          </div> */}
           <div className='section1_3'>
-            <PieChart width={300} height={300}>
-              <Pie
-                data={data1_2}
-                cy={100}
-                innerRadius={50}
-                outerRadius={80}
-                fill='#8884d8'
-                paddingAngle={0}
-                dataKey='value'
-              >
-                {data1_2.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                ))}
-              </Pie>
-            </PieChart>
+            <RadarChart cx={300} cy={250} outerRadius={150} width={500} height={500} data={data1_2}>
+              <PolarGrid />
+              <PolarAngleAxis dataKey='name' />
+              <PolarRadiusAxis />
+              <Radar stroke='#000000' fill='#0088FE' fillOpacity={0.6} dataKey='A'></Radar>
+              <Radar stroke='#000000' fill='#00C49F' fillOpacity={0.6} dataKey='B'></Radar>
+              <Radar stroke='#000000' fill='#FFBB28' fillOpacity={0.6} dataKey='C'></Radar>
+            </RadarChart>
             <div className='section1_3_box'>
-              {data1_2.map((d, i) => {
-                return (
-                  <div className='section1_3_0'>
-                    <div className='section1_3_1'></div>
-                    <div className='section1_3_2'>{d.value}</div>
-                    <div className='section1_3_3'>{d.value}</div>
-                  </div>
-                );
-              })}
+              <div className='section1_3_0'>
+                <div className='section1_3_1'>Z-score</div>
+                {/* <div className='section1_3_2'></div>
+                <div className='section1_3_3'></div> */}
+              </div>
             </div>
           </div>
         </div>
@@ -155,8 +181,11 @@ function FinancialAnalysisResults() {
           <div className='section3'>
             <div className='section3_1'>
               <p className='section3_1_1'>벤포드의 법칙</p>
-              <p className='section3_1_2'>asldnlasndlkansdlknasldknaslkdnasdk</p>
-              <div className='section3_2'>
+              <p className='section3_1_2'>
+                다양한 수치 데이터들의 앞자리 숫자가 큰 수일수록 비중은 작은 경향을 보이는데요.
+                분석회계 탐지에 이용돼요.
+              </p>
+              {/* <div className='section3_2'>
                 <div className='section3_2_1'>
                   <p className='section3_2_2'>Order value</p>
                   <p className='section3_2_3'>12.3K</p>
@@ -173,7 +202,7 @@ function FinancialAnalysisResults() {
                   <p className='section3_2_2'>Downloads</p>
                   <p className='section3_2_3'>34040</p>
                 </div>
-              </div>
+              </div> */}
             </div>
             <ResponsiveContainer width={450} height={200}>
               <LineChart
@@ -191,8 +220,8 @@ function FinancialAnalysisResults() {
                 <XAxis dataKey='name' />
                 <YAxis />
                 <Tooltip />
-                <Line type='monotone' dataKey='pv' stroke='#8884d8' activeDot={{ r: 8 }} />
-                <Line type='monotone' dataKey='uv' stroke='#82ca9d' />
+                <Line type='monotone' dataKey='finstat' stroke='#8884d8' activeDot={{ r: 10 }} />
+                <Line type='monotone' dataKey='benford' stroke='#82ca9d' />
               </LineChart>
             </ResponsiveContainer>
           </div>
@@ -200,25 +229,35 @@ function FinancialAnalysisResults() {
             <div className='sectoin4_1'>
               <div className='section4_1_1'>
                 <p className='section4_1_1_1'>유동비율</p>
-                <p className='section4_1_1_2'>4006</p>
-                <p className='section4_1_1_3'>10.00%(30 days)</p>
+                <p className='section4_1_1_2'>0.6816</p>
+                <p className='section4_1_1_3'>68.16%(2021년)</p>
               </div>
               <div className='section4_1_2'>
-                <p className='section4_1_1_1'>재고자산회전률</p>
+                <p className='section4_1_1_1'>총자산회전률</p>
+                <p className='section4_1_1_2'>61344</p>
+                <p className='section4_1_1_3'>22.00%(30 days)</p>
+              </div>
+              <div className='section4_1_3'>
+                <p className='section4_1_1_1'>자기자본비율</p>
                 <p className='section4_1_1_2'>61344</p>
                 <p className='section4_1_1_3'>22.00%(30 days)</p>
               </div>
             </div>
             <div className='sectoin4_1'>
               <div className='section4_1_1'>
-                <p className='section4_1_1_1'>자기자본비율</p>
+                <p className='section4_1_1_1'>부채비율</p>
                 <p className='section4_1_1_2'>34040</p>
                 <p className='section4_1_1_3'>2.00%(30 days)</p>
               </div>
               <div className='section4_1_2'>
-                <p className='section4_1_1_1'>배당수익률</p>
+                <p className='section4_1_1_1'>총자산순이익률</p>
                 <p className='section4_1_1_2'>47033</p>
                 <p className='section4_1_1_3'>0.22%(30 days)</p>
+              </div>
+              <div className='section4_1_3'>
+                <p className='section4_1_1_1'>충자본경상이익률</p>
+                <p className='section4_1_1_2'>61344</p>
+                <p className='section4_1_1_3'>22.00%(30 days)</p>
               </div>
             </div>
           </div>
