@@ -2,7 +2,7 @@ import React, { useCallback, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { NavbarContainer1, Text1, SearchIcon, Input, InputArea } from './styles.js';
 
-const NavBar = () => {
+function NavBar() {
   const navigate = useNavigate();
 
   const [searchKey, setSearchKey] = useState('');
@@ -15,7 +15,6 @@ const NavBar = () => {
     navigate('/company-analysis');
   };
   // 버튼에 적용할 클릭 이벤트 함수
-
   const handleOnKeyPress = (e) => {
     if (e.key === 'Enter') {
       handleOnClick(); // Enter 입력이 되면 클릭 이벤트 실행
@@ -28,7 +27,7 @@ const NavBar = () => {
   }
   return (
     <NavbarContainer1>
-      <Text1>Investment Vaccine</Text1>
+      <Text1>Invetment Vaccine</Text1>
 
       <Input
         placeholder='기업명을 입력해주세요.'
@@ -40,5 +39,5 @@ const NavBar = () => {
       </SearchIcon>
     </NavbarContainer1>
   );
-};
+}
 export default NavBar;
