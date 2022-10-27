@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import { FaTh, FaBars, FaUserAlt } from 'react-icons/fa';
-import { NavLink } from 'react-router-dom';
-import './navbar.css';
+import React, { useCallback, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { NavbarContainer1, Text1, SearchIcon, Input, InputArea } from './styles.js';
 
 const Sidebar = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,29 +22,43 @@ const Sidebar = ({ children }) => {
       icon: <FaUserAlt />,
     },
   ];
+const NavBar = () => {
+  const navigate = useNavigate();
+
+  const [searchKey, setSearchKey] = useState('');
+
+  const onInputChange = useCallback((event) => {
+    setSearchKey(event.target.value);
+  }, []);
+
+  const handleOnClick = () => {
+    navigate('/company-analysis');
+  };
+  // 버튼에 적용할 클릭 이벤트 함수
+
+  const handleOnKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      handleOnClick(); // Enter 입력이 되면 클릭 이벤트 실행
+    }
+  };
+  const location = useLocation();
+  console.log(location.pathname);
+  if (window.location.pathname === '/') {
+    return null;
+  }
   return (
-    <div className='container'>
-      <div style={{ width: isOpen ? '200px' : '50px' }} className='sidebar'>
-        <div className='top_section'>
-          <h1 style={{ display: isOpen ? 'block' : 'none' }} className='logo'>
-            Investment Vaccine
-          </h1>
-          <div style={{ marginLeft: isOpen ? '50px' : '0px' }} className='bars'>
-            <FaBars onClick={toggle} />
-          </div>
-        </div>
-        {menuItem.map((item, index) => (
-          <NavLink to={item.path} key={index} className='link' activeclassName='active'>
-            <div className='icon'>{item.icon}</div>
-            <div style={{ display: isOpen ? 'block' : 'none' }} className='link_text'>
-              {item.name}
-            </div>
-          </NavLink>
-        ))}
-      </div>
-      <main>{children}</main>
-    </div>
+    <NavbarContainer1>
+      <Text1>Invsetment Vaccine</Text1>
+
+      <Input
+        placeholder='기업명을 입력해주세요.'
+        onChange={onInputChange}
+        onKeyPress={handleOnKeyPress}
+      />
+      <SearchIcon>
+        <img className='searchicon' alt='search' src='/img/vector.svg' />
+      </SearchIcon>
+    </NavbarContainer1>
   );
 };
-
-export default Sidebar;
+export default NavBar;

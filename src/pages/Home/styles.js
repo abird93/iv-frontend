@@ -12,6 +12,7 @@ export const HomeFlexArea = styled.div`
   display: flex;
   width: 63.875rem;
   flex-direction: column;
+  margin-bottom: 12rem;
 `;
 
 export const Title = styled.div`
@@ -20,19 +21,20 @@ export const Title = styled.div`
   font-weight: 400;
   font-size: 7.5rem;
   line-height: 9rem;
-  color: #ef5350;
+  color: #7978e9;
+  font-family: 'SpoqaHanSansNeo-Regular';
 `;
 
 export const SearchInputArea = styled.div`
   display: flex;
   width: 100%;
-  margin-top: 4.5rem;
-  justify-content: space-between;
+  justify-content: center;
 `;
 
 export const InputArea = styled.div`
   position: relative;
-  width: 50.375rem;
+  width: 80%;
+  margin-top: 40px;
 `;
 
 export const Input = styled.input`
@@ -40,40 +42,35 @@ export const Input = styled.input`
   width: 100%;
   top: 0;
   left: 0;
-  font-weight: 400;
+  font-weight: 1200;
   color: #000000;
+  font-size: 20px;
   padding: 1rem 3.625rem 1rem 0.75rem;
   box-sizing: border-box;
   border: 1px solid #e4dfdf;
   border-radius: 3.125rem;
+  padding-left: 50px;
 
   &:focus {
     outline: none;
   }
 `;
 
-// export const SearchIcon = styled.image({ src: searchIcon })`
-//   position: absolute;
-//   top: 1rem;
-//   right: 0.75rem;
-//   width: 2rem;
-//   height: 2rem;
-// `;
-
-export const SearchButton = styled.div`
-  width: 10rem;
-  padding: 0.875rem 0;
-  text-align: center;
-  background-color: #4b49ac;
-  font-weight: 700;
-  color: #ffffff;
-  border-radius: 0.25rem;
+export const SearchIcon = styled.div`
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 2rem;
+  height: 2rem;
 `;
 
 export const Subtitle = styled.div`
+  position: relative;
+  top: 100px;
   font-weight: 400;
   font-size: 1.875rem;
   line-height: 2.25rem;
   color: #424242;
-  margin: 1.5rem 0 0 31.5rem;
+  text-align: center;
+  font-family: 'SpoqaHanSansNeo-Regular';
 `;

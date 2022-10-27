@@ -1,12 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import styled from 'styled-components';
-import Sidebar from './component/NavBar';
 import Home from './pages/Home';
 import CompanyAnalysis from './pages/CompanyAnalysis';
 import Companyoverview from './pages/CompanyOverview';
 import FiancialAnalysisResult from './pages/FinancialAnalysisResults';
 import { Path } from './constants';
+import NavBar from './component/Navbar';
+import { Navigate } from 'react-router-dom';
 
 const AppContainer = styled.div`
   display: flex;
@@ -20,14 +21,13 @@ function App() {
       {/* Header  */}
 
       <BrowserRouter>
-        <Sidebar>
-          <Routes>
-            <Route path={Path.home} element={<Home />} />
-            <Route path={Path.companyAnalysis} element={<CompanyAnalysis />} />
-            <Route path={Path.companyoverview} element={<Companyoverview />} />
-            <Route path={Path.financialAnalysisresult} element={<FiancialAnalysisResult />} />
-          </Routes>
-        </Sidebar>
+        <NavBar />
+        <Routes>
+          <Route path={Path.home} element={<Home />} />
+          <Route path={Path.companyAnalysis} element={<CompanyAnalysis />} />
+          <Route path={Path.companyoverview} element={<Companyoverview />} />
+          <Route path={Path.financialAnalysisresult} element={<FiancialAnalysisResult />} />
+        </Routes>
       </BrowserRouter>
 
       {/* Footer */}
