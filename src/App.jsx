@@ -6,6 +6,8 @@ import CompanyAnalysis from './pages/CompanyAnalysis';
 import Companyoverview from './pages/CompanyOverview';
 import FiancialAnalysisResult from './pages/FinancialAnalysisResults';
 import { Path } from './constants';
+import NavBar12 from './component/Navbar1';
+import Sidebar from './component/Sidebar1';
 
 const AppContainer = styled.div`
   display: flex;
@@ -19,6 +21,8 @@ function App() {
       {/* Header  */}
 
       <BrowserRouter>
+        <NavBar12 />
+        <Sidebar />
         <Routes>
           <Route path={Path.home} element={<Home />} />
           <Route path={Path.companyAnalysis} element={<CompanyAnalysis />} />
