@@ -22,8 +22,6 @@ function App() {
       {/* Header  */}
 
       <BrowserRouter>
-        <NavBar />
-        <Sidebar />
         <Routes>
           <Route path={Path.home} element={<Home />} />
           <Route path={Path.companyAnalysis} element={<CompanyAnalysis />} />
