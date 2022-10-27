@@ -6,9 +6,6 @@ import CompanyAnalysis from './pages/CompanyAnalysis';
 import Companyoverview from './pages/CompanyOverview';
 import FiancialAnalysisResult from './pages/FinancialAnalysisResults';
 import { Path } from './constants';
-import NavBar from './component/Navbar';
-import Sidebar from './component/Sidebar1';
-import { Navigate } from 'react-router-dom';
 
 const AppContainer = styled.div`
   display: flex;

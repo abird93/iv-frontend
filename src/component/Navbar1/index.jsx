@@ -2,7 +2,7 @@ import React, { useCallback, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { NavbarContainer1, Text1, SearchIcon, Input, InputArea } from './styles.js';
 
-function NavBar() {
+function NavBar12() {
   const navigate = useNavigate();
 
   const [searchKey, setSearchKey] = useState('');
@@ -40,4 +40,4 @@ function NavBar() {
     </NavbarContainer1>
   );
 }
-export default NavBar;
+export default NavBar12;
