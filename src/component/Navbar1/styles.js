@@ -2,14 +2,14 @@ import styled from 'styled-components';
 
 export const NavbarContainer1 = styled.div`
   font-family: 'SpoqaHanSansNeo-Regular';
-  height: 60px;
+  height: 80px;
   box-sizing: border-box;
   background-color: #fff;
 `;
 
 export const Text1 = styled.div`
   text-align: center;
-  font-size: 24px;
+  font-size: 35px;
   line-height: 44px;
   /* or 183% */
   margin-left: 50px;
@@ -24,7 +24,7 @@ export const Input = styled.input`
   position: absolute;
   width: 600px;
   height: 50px;
-  top: 5px;
+  top: 15px;
   left: 600px;
   font-weight: 600;
   color: #000000;
@@ -44,7 +44,7 @@ export const Input = styled.input`
 
 export const SearchIcon = styled.div`
   position: absolute;
-  top: 1.25rem;
+  top: 30px;
   left: 614px;
   width: 2rem;
   height: 2rem;

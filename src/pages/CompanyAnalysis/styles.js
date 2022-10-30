@@ -84,15 +84,12 @@ export const Text3 = styled.div`
 
 export const Text4 = styled.div`
   position: absolute;
-  width: 112px;
-  height: 24px;
+
   left: 21px;
   top: 23px;
 
-  font-family: 'Inter';
-  font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 24px;
 
   color: #000000;
@@ -105,10 +102,8 @@ export const Text5 = styled.div`
   left: 15px;
   top: 56px;
 
-  font-family: 'Inter';
-  font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 36px;
 
   color: #000000;

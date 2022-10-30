@@ -3,6 +3,12 @@ import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { NavbarContainer1, Text1, SearchIcon, Input, InputArea } from './styles.js';
 
 function NavBar12() {
+  function Colorfulblue({ children }) {
+    return <span style={{ color: '#466EB6' }}>{children}</span>;
+  }
+  function Colorfulred({ children }) {
+    return <span style={{ color: '#EF5350' }}>{children}</span>;
+  }
   const navigate = useNavigate();
 
   const [searchKey, setSearchKey] = useState('');
@@ -28,7 +34,9 @@ function NavBar12() {
   return (
     <NavbarContainer1>
       <Link to='/' style={{ textDecoration: 'none' }}>
-        <Text1>Iee Vee </Text1>
+        <Text1>
+          <Colorfulred>I</Colorfulred>ee<Colorfulblue>V</Colorfulblue>ee{' '}
+        </Text1>
       </Link>
 
       <Input

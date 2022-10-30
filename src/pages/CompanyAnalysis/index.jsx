@@ -18,6 +18,12 @@ import {
 } from './styles';
 
 function CompanyAnalysis() {
+  function Colorfulblue({ children }) {
+    return <span style={{ color: '#466EB6' }}>{children}</span>;
+  }
+  function Colorfulred({ children }) {
+    return <span style={{ color: '#EF5350' }}>{children}</span>;
+  }
   return (
     <HomeContainer>
       <Title>일동홀딩스를 분석해 봤어요</Title>
@@ -36,7 +42,10 @@ function CompanyAnalysis() {
         <Text3>재무제표를 완전히 신뢰할 수 없어요</Text3>
       </Text2area>
       <Text3area>
-        <Text4>AI 분석 결과</Text4>
+        <Text4>
+          <Colorfulred>I</Colorfulred>
+          <Colorfulblue>V</Colorfulblue> 분석 결과
+        </Text4>
         <Text5>일동홀딩스 생존확률</Text5>
         <Barchartarea>
           <BarChartcompany></BarChartcompany>

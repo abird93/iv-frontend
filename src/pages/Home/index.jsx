@@ -64,8 +64,7 @@ function Home() {
           </InputArea>
           {/*<SearchButton onClick={onSearchButtonClick}>검색</SearchButton>*/}
         </SearchInputArea>
-        <Subtitle>Investment Vaccine</Subtitle>
-        <Subtitle1>인공지능 부실예측 플랫폼 </Subtitle1>
+        <Subtitle>인공지능 부실예측 플랫폼</Subtitle>
       </HomeFlexArea>
     </HomeContainer>
   );
