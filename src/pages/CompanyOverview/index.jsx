@@ -1,6 +1,5 @@
 import React from 'react';
-//import { Companyoverviewcontainer } from './styles';
-import './test1.css';
+import './test.css';
 import {
   LineChart,
   Line,
@@ -16,44 +15,44 @@ import {
 } from 'recharts';
 //import { PieChart, Pie, Sector, Cell } from 'recharts';
 
-const data = [
-  {
-    name: '22-10-24',
-    고가: 24750,
-    저가: 23750,
-  },
-  {
-    name: '22-10-25',
-    고가: 25350,
-    저가: 24200,
-  },
-  {
-    name: '22-10-26',
-    고가: 25600,
-    저가: 23800,
-  },
-  {
-    name: '22-10-27',
-    고가: 24550,
-    저가: 23800,
-  },
-  {
-    name: '22-10-28',
-    고가: 24100,
-    저가: 23500,
-  },
-  {
-    name: '22-10-31',
-    고가: 23900,
-    저가: 23600,
-  },
-  // {
-  //   name: '70',
-  //   uv: 3490,
-  //   pv: 4300,
-  //   amt: 2100,
-  // },
-];
+// const data = [
+//   {
+//     name: '22-10-24',
+//     고가: 24750,
+//     저가: 23750,
+//   },
+//   {
+//     name: '22-10-25',
+//     고가: 25350,
+//     저가: 24200,
+//   },
+//   {
+//     name: '22-10-26',
+//     고가: 25600,
+//     저가: 23800,
+//   },
+//   {
+//     name: '22-10-27',
+//     고가: 24550,
+//     저가: 23800,
+//   },
+//   {
+//     name: '22-10-28',
+//     고가: 24100,
+//     저가: 23500,
+//   },
+//   {
+//     name: '22-10-31',
+//     고가: 23900,
+//     저가: 23600,
+//   },
+//   // {
+//   //   name: '70',
+//   //   uv: 3490,
+//   //   pv: 4300,
+//   //   amt: 2100,
+//   // },
+// ];
 
 // const section1_2_data = [
 //   {
@@ -144,10 +143,8 @@ function Companyoverview() {
               </Pie>
             </PieChart>
             <div className='section1_3_box'>
-              <div className='section1_3_1'></div>
-              <div className='section1_3_0'>개인/기관 98.75%</div>
-              <div className='section1_3_2'></div>
-              <div className='section1_3_0'>외국인 1.25%</div>
+              <div className='section1_3_0_0'>개인/기관 98.75%</div>
+              <div className='section1_3_0_1'>외국인 1.25%</div>
             </div>
           </div>
         </div>
@@ -155,7 +152,7 @@ function Companyoverview() {
           <div className='section3'>
             <div className='section3_1'>
               <p className='section3_1_1'>실시간 주가</p>
-              <p className='section3_1_2'></p>
+
               <div className='section3_2'>
                 {/* <div className='section3_2_1'>
                   <p className='section3_2_2'>Order value</p>
@@ -173,9 +170,11 @@ function Companyoverview() {
                   <p className='section3_2_2'>Downloads</p>
                   <p className='section3_2_3'>34040</p>
                 </div> */}
+                <img className='chart1' alt='chart1' src='img/chart1.png' />
               </div>
             </div>
-            <ResponsiveContainer width={450} height={200}>
+
+            {/* <ResponsiveContainer width={450} height={200}>
               <LineChart
                 width={500}
                 height={300}
@@ -194,7 +193,7 @@ function Companyoverview() {
                 <Line type='monotone' dataKey='저가' stroke='#8884d8' activeDot={{ r: 8 }} />
                 <Line type='monotone' dataKey='고가' stroke='#82ca9d' />
               </LineChart>
-            </ResponsiveContainer>
+            </ResponsiveContainer> */}
           </div>
           <div className='section4'>
             <div className='section4_1'>

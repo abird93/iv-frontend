@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import Home from './pages/Home';
 import CompanyAnalysis from './pages/CompanyAnalysis';
 import Companyoverview from './pages/CompanyOverview';
-import FiancialAnalysisResult from './pages/FinancialAnalysisResults';
 import { Path } from './constants';
 import NavBar12 from './component/Navbar1';
 import Sidebar from './component/Sidebar1';
@@ -27,7 +26,7 @@ function App() {
           <Route path={Path.home} element={<Home />} />
           <Route path={Path.companyAnalysis} element={<CompanyAnalysis />} />
           <Route path={Path.companyoverview} element={<Companyoverview />} />
-          <Route path={Path.financialAnalysisresult} element={<FiancialAnalysisResult />} />
+          {/* <Route path={Path.financialAnalysisresult} element={<FiancialAnalysisResult />} /> */}
         </Routes>
       </BrowserRouter>
 
