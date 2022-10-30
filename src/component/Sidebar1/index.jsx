@@ -34,13 +34,11 @@ const Sidebar = ({}) => {
 
   return (
     <SidebarContainer1>
-      <Sidebararea>
-        {menuItem.map((item, index) => (
-          <NavLink to={item.path} key={index} style={{ textDecoration: 'none' }}>
-            <Text1>{item.name}</Text1>
-          </NavLink>
-        ))}
-      </Sidebararea>
+      {menuItem.map((item, index) => (
+        <NavLink to={item.path} key={index} style={{ textDecoration: 'none' }}>
+          <Text1>{item.name}</Text1>
+        </NavLink>
+      ))}
     </SidebarContainer1>
   );
 };

@@ -17,6 +17,8 @@ import {
   PolarRadiusAxis,
 } from 'recharts';
 import { PieChart, Pie, Sector, Cell } from 'recharts';
+import NavBar12 from '../../component/Navbar1';
+import Sidebar from '../../component/Sidebar1';
 
 const data = [
   {

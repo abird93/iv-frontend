@@ -75,3 +75,15 @@ export const Subtitle = styled.div`
   text-align: center;
   font-family: 'SpoqaHanSansNeo-Regular';
 `;
+
+export const Subtitle1 = styled.div`
+  position: relative;
+  top: 100px;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 2.25rem;
+  color: #424242;
+  text-align: center;
+  font-family: 'SpoqaHanSansNeo-Regular';
+`;

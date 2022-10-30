@@ -32,8 +32,8 @@ function CompanyAnalysis() {
         <Img3area>
           <img className='catuion-mark' alt='pngegg' src='img/catuionicon.png' />
         </Img3area>
-        <Text2>투자주의</Text2>
-        <Text3>투기적이거나 불공정거래와 관련된 회사일 수 있어요</Text3>
+        <Text2>분식위험</Text2>
+        <Text3>재무제표를 완전히 신뢰할 수 없어요</Text3>
       </Text2area>
       <Text3area>
         <Text4>AI 분석 결과</Text4>

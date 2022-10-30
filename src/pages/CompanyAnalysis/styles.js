@@ -5,9 +5,9 @@ export const HomeContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100vh;
   background-color: #fff;
+  margin-top: auto;
+  margin-left: auto;
 `;
 
 export const Title = styled.div`
@@ -73,7 +73,8 @@ export const Text2 = styled.div`
 
 export const Text3 = styled.div`
   position: absolute;
-  left: 78px;
+  text-align: center;
+  left: 140px;
   bottom: 54px;
   font-weight: 400;
   font-size: 20px;

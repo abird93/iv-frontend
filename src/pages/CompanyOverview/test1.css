@@ -1,7 +1,9 @@
 .root {
   padding: 50px;
   background-color: rgb(233, 232, 232);
+  margin-left: 200px;
 }
+
 .section1 {
   display: flex;
   margin-bottom: 50px;

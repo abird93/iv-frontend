@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { NavbarContainer1, Text1, SearchIcon, Input, InputArea } from './styles.js';
 
 function NavBar12() {
@@ -27,7 +27,9 @@ function NavBar12() {
   }
   return (
     <NavbarContainer1>
-      <Text1>Invetment Vaccine</Text1>
+      <Link to='/' style={{ textDecoration: 'none' }}>
+        <Text1>Iee Vee </Text1>
+      </Link>
 
       <Input
         placeholder='기업명을 입력해주세요.'

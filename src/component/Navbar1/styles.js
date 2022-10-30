@@ -8,10 +8,11 @@ export const NavbarContainer1 = styled.div`
 `;
 
 export const Text1 = styled.div`
+  text-align: center;
   font-size: 24px;
   line-height: 44px;
   /* or 183% */
-  margin-left: 20px;
+  margin-left: 50px;
   margin-top: 10px;
   display: flex;
   align-items: center;

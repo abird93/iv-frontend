@@ -12,6 +12,7 @@ import {
   SearchInputArea,
   // SearchIcon,
   Subtitle,
+  Subtitle1,
   Title,
 } from './styles';
 
@@ -63,7 +64,8 @@ function Home() {
           </InputArea>
           {/*<SearchButton onClick={onSearchButtonClick}>검색</SearchButton>*/}
         </SearchInputArea>
-        <Subtitle>인공지능 기업분석 플랫폼</Subtitle>
+        <Subtitle>Investment Vaccine</Subtitle>
+        <Subtitle1>인공지능 부실예측 플랫폼 </Subtitle1>
       </HomeFlexArea>
     </HomeContainer>
   );
