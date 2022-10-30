@@ -1,6 +1,6 @@
 import React from 'react';
 //import { FinancialAnalysisResultscontainer } from './styles';
-import './test2.css';
+import './analysis.css';
 import {
   LineChart,
   Line,
